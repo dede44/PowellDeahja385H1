@@ -19,11 +19,9 @@ public class MainActivity extends AppCompatActivity {
         nameText= (TextView)findViewById(R.id.name_text);
         nameButton=(Button)findViewById(R.id.name_button);
 
-        nameButton.setOnClickListener(new View.OnClickListener()
-        {
+        nameButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClickView(View v)
-            {
+            public void onClick(View view) {
                 MainActivity.this.nameText.setText(R.string.name_text);
             }
         });
